@@ -7,3 +7,5 @@ Then I tried to define a function because I thought that would work, but I could
 After consulting with my tutor, I found that a nested for loop would be the best approach.
 
 In pypoll after a few tries where I got an error about the file not being subscriptable, I turned it into a list.
+
+I was not able to complete this assignment before the deadline, but I will continue to work on it.
