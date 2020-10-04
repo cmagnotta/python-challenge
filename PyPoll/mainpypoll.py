@@ -27,35 +27,52 @@ Created on Thu Oct  1 22:07:51 2020
 #The winner of the election based on popular vote.
 
 
-
-import csv
 import os
+import csv
+electionData = os.path.join('election_data.csv')
 
-election_data = os.path.join('election_data.csv')
-
-with open('election_data.csv', 'r')
-    next(electionData)
+with open('election_data.csv', 'r') as csvfile:
+    electionData = list(csv.reader(csvfile, delimiter= ",")
+        
+        for columns in electionData:
+            
+            votes.append(rows[0])
+            candidates.append(rows[2])
+            
+        totalVotes = len(votes)
+        print(totalVotes)
+              
+    #header = next(electionData)                    
+    #votes = 0
+    #totalVotes = 0
     
-    #data_list = l
+    #for rows in electionData
 
 
 #i want to count the total number of votesfor each of four candidates
 #and then find the winner based on the percentage
+#this looks like a list I want to append
+     
+        #votes = int(rows[0])
+        #candidates = str(electionData[2])
+        #totalVotes += 1
+        
+        
+        
+        #candidateA = str("Khan", (electionData[2]))
+        #print(candidateA)
+        #candidateB = str("Correy", (electionData[2]))
+        #candidateC = str("Li", (electionData[2]))
+        #candidateD = str("O'Tooley", (electionData[2]))
+        
+        #print(totalVotes)
+        #print("Khan")
+        
 
-    for rows in electionData:   
-    
-        
-        votes = int(rows[0])
-        totalVotes = int(electionData[0])
-        candidates = str(electionData[2])
-        candidateA = str("Khan", (electionData[2]))
-        candidateB = str("Correy", (electionData[2]))
-        candidateC = str("Li", (electionData[2]))
-        candidateD = str("O'Tooley", (electionData[2]))
-        
-        print(totalVotes)
-        print("Khan")
-                        
+#it = iter(col)
+#next(it, None)  # skip first entry
+#for column in it:
+    #print column
         
 
 
@@ -63,7 +80,7 @@ with open('election_data.csv', 'r')
 
 
         
-        print
+        #print
         
         #votes.append
         
