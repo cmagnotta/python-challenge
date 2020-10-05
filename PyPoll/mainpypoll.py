@@ -27,62 +27,59 @@ Created on Thu Oct  1 22:07:51 2020
 #The winner of the election based on popular vote.
 
 
-import os
+
 import csv
-electionData = os.path.join('election_data.csv')
+import pandas as pd
+#import os
 
-with open('election_data.csv', 'r') as csvfile:
-    electionData = list(csv.reader(csvfile, delimiter= ",")
-        
-        for columns in electionData:
-            
-            votes.append(rows[0])
-            candidates.append(rows[2])
-            
-        totalVotes = len(votes)
-        print(totalVotes)
-              
-    #header = next(electionData)                    
-    #votes = 0
-    #totalVotes = 0
+with open('/Users/christinemagnotta/python-challenge/python-challenge/PyPoll/election_data.csv', 'r') as csvfile:
+     election_data = csv.reader(csvfile)
+     #election_df = pd.DataFrame(electon_data)
+     #print(election_df.head)
     
-    #for rows in electionData
-
-
-#i want to count the total number of votesfor each of four candidates
-#and then find the winner based on the percentage
-#this looks like a list I want to append
+     votes = 0
+     totalVotes = 0
      
-        #votes = int(rows[0])
-        #candidates = str(electionData[2])
-        #totalVotes += 1
-        
-        
-        
-        #candidateA = str("Khan", (electionData[2]))
-        #print(candidateA)
-        #candidateB = str("Correy", (electionData[2]))
-        #candidateC = str("Li", (electionData[2]))
-        #candidateD = str("O'Tooley", (electionData[2]))
-        
-        #print(totalVotes)
-        #print("Khan")
-        
-
-#it = iter(col)
-#next(it, None)  # skip first entry
-#for column in it:
-    #print column
-        
+     
+     for rows in election_data:
+         totalVotes = len(rows[0])
+         candidateDict = {"Candidates": "Khan", "Correy", "Li", "O'Tooley"}
+         #need to calculate the number of votes that each candidate got
+         #need to set each candidate to a variable and create a for loop to count the number of times each name appears
+         
 
 
-#ATTEMPTING TO REVERSE ENGINEER THIS.
+            if 
+         print(candidateDict)           
+         
+        
+     print("Total Votes: {totalVotes}")
+     print("Khan got {NUMBER OF VOTES} for {percentage}")
+     print("Correy got {NUMBER OF VOTES} for {percentage}")
+     print("Li got {NUMBER OF VOTES} for {percentage}")
+     print("O'Tooley got{NUMBER OF VOTES} for {percentage}")
+     print{"The winner is "}
+
+         
+         
+         #print(totalVotes)
+    
 
 
+#print(candidates)
+   
+
+
+#print("The winner is" )
+
+
+
+
+#sumSales = sum(salesDF['Price'])                        
         
-        #print
-        
-        #votes.append
+
+
+
         
         
         #totalVotes = int(electionData[0])
